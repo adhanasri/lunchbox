@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="in.lunchbox.firebase.AdminCustomerActivity"
+    tools:showIn="@layout/activity_admin_customer"
+    android:background="@color/colorBackground">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:hint="@string/register_firstName"
+        android:ems="10"
+        android:id="@+id/customerFirstName"
+        android:background="@drawable/inputtext_rounded_corners"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:hint="@string/register_lastName"
+        android:ems="10"
+        android:id="@+id/customerLastName"
+        android:background="@drawable/inputtext_rounded_corners"
+        android:layout_below="@+id/customerFirstName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="@string/register_phone"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/customerPhone"
+        android:background="@drawable/inputtext_rounded_corners"
+        android:layout_below="@+id/customerLastName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="@string/register_email"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/customerEmail"
+        android:background="@drawable/inputtext_rounded_corners"
+        android:layout_below="@+id/customerPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/customerEmail"
+        android:id="@+id/saveCustomerInfo"
+        android:text="@string/admin_customer_next"
+        android:textColor="@color/textColorPrimary"
+        android:background="@drawable/button_rounded_corners_accent"/>
+
+</RelativeLayout>

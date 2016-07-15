@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "in.lunchbox.firebase"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE-FIREBASE_android.txt'
+        exclude 'META-INF/LICENSE-FIREBASE_jvm.txt'
+        exclude 'NOTICE_firebase_jvm'
+        exclude 'NOTICE_firebase_android'
+        exclude("META-INF/maven/com.fasterxml.jackson.core/jackson-core/pom.properties")
+        exclude("META-INF/maven/com.fasterxml.jackson.core/jackson-core/pom.xml")
+        exclude("META-INF/maven/com.fasterxml.jackson.core/jackson-annotations/pom.properties")
+        exclude("META-INF/maven/com.fasterxml.jackson.core/jackson-annotations/pom.xml")
+        exclude("META-INF/services/com.fasterxml.jackson.core.JsonFactory")
+        exclude("META-INF/services/com.fasterxml.jackson.core.ObjectCodec")
+        exclude("META-INF/maven/com.fasterxml.jackson.core/jackson-databind/pom.xml")
+        exclude("META-INF/maven/com.fasterxml.jackson.core/jackson-databind/pom.properties")
+        exclude("META-INF/maven/com.firebase/firebase-client-jvm/pom.properties")
+        exclude("META-INF/maven/com.firebase/firebase-client-jvm/pom.xml")
+        exclude("META-INF/maven/com.firebase/tubesock/pom.xml")
+        exclude("META-INF/maven/com.firebase/tubesock/pom.properties")
+        exclude("META-INF/maven/com.firebase/firebase-client-android/pom.properties")
+        exclude("META-INF/maven/com.firebase/firebase-client-android/pom.xml")
+
+    }
+
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.google.android.gms:play-services-maps:8.4.0'
+    compile 'com.google.android.gms:play-services-gcm:8.4.0'
+    compile 'com.google.android.gms:play-services-plus:8.4.0'
+    compile 'com.google.android.gms:play-services-auth:8.4.0'
+    compile 'com.google.android.gms:play-services-identity:8.4.0'
+    compile 'com.google.android.gms:play-services-location:8.4.0'
+    compile 'com.android.support:cardview-v7:23.3.0'
+    compile 'com.firebase:firebase-client-android:2.5.2'
+    compile 'com.android.support:support-v4:23.3.0'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile files('libs/httpcore-4.4.4.jar')
+    compile files('libs/httpclient-4.5.2.jar')
+}

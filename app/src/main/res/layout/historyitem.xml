@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_marginTop="5dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="4dp"
+        android:id="@+id/historyItemCard">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/historyItemTitle"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/historyItemDeliveryInfo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/historyItemTitle"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/historyItemStatus"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"/>
+
+            <!--<Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/historyItemStatus"
+                android:text="@string/historyItem_trackDelivery"
+                android:textColor="@color/textColorPrimary"
+                android:background="@drawable/button_rounded_corners_accent"
+                android:id="@+id/trackDelivery"
+                android:visibility="invisible"/>-->
+
+            <!--<Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/historyItemTitle"
+                android:text="@string/historyItem_cancelOrder"
+                android:textColor="@color/textColorPrimary"
+                android:background="@drawable/button_rounded_corners_accent"
+                android:id="@+id/cancelOrder"
+                android:visibility="invisible"/>-->
+
+            <!--<Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/historyItemStatus"
+                android:text="@string/historyItem_order"
+                android:textColor="@color/textColorPrimary"
+                android:background="@drawable/button_rounded_corners_accent"
+                android:id="@+id/order"
+                android:visibility="invisible"/>-->
+
+            <!--<Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/historyItemStatus"
+                android:text="@string/historyItem_orderAgain"
+                android:textColor="@color/textColorPrimary"
+                android:background="@drawable/button_rounded_corners_accent"
+                android:id="@+id/orderAgain"
+                android:visibility="invisible"/>-->
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
